@@ -93,20 +93,23 @@ main {
   flex-direction: column;
 } */
 
+.section-header {
+  margin: 10px 5px;
+}
+
 .staff-container-list {
   width: 350px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .staff-cards {
-  height: 600px;
-  width: 330px;
+  height: 610px;
+  width: 340px;
   margin: 0 auto;
-  /* border: 1px solid black; */
+  border: 1px solid rgba(255, 166, 0, 0.938);
   border-radius: 5px;
 }
 
@@ -114,7 +117,7 @@ main {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 10px 0px;
+  margin-bottom: 10px;
 }
 
 .engageButton {
@@ -126,7 +129,7 @@ main {
 }
 
 .engageButton.right {
-  transform: translate(530%, 30%);
+  transform: translate(552%, 30%);
 }
 
 .engageButton.left {
@@ -135,13 +138,13 @@ main {
 
 .card-photo {
   height: 218px;
-  width: 328px;
+  width: 338px;
   z-index: -1;
 }
 
 .overlay {
   height: 218px;
-  width: 328px;
+  width: 338px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.24);
 }
@@ -151,6 +154,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 7px;
+  margin-right: 2px;
 }
 
 .bonus-text {

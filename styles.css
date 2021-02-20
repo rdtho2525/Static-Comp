@@ -20,6 +20,7 @@ Misc */
 }
 
 body {
+  background-color: rgba(43, 170, 243, 0.548);
   font-family: sans-serif;
 }
 
@@ -30,6 +31,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: scroll;
+  z-index: -10;
 }
 
 .nav-bar {
@@ -40,8 +42,9 @@ main {
   flex-direction: row-reverse;
   justify-content: space-between;
   position: sticky;
+  background-color: rgb(253, 253, 253);
   margin-bottom: 10px;
-  border: 1px solid lightblue;
+  border-bottom: 4px solid rgba(255, 166, 0, 0.938);
   padding-bottom: 10px;
   overflow: hidden;
 }
@@ -94,7 +97,7 @@ main {
 } */
 
 .section-header {
-  margin: 10px 5px;
+  padding: 10px 5px;
 }
 
 .staff-container-list {
@@ -106,10 +109,10 @@ main {
 }
 
 .staff-cards {
-  height: 610px;
+  height: 608px;
   width: 340px;
   margin: 0 auto;
-  border: 1px solid rgba(255, 166, 0, 0.938);
+  border: 4px solid rgba(255, 166, 0, 0.938);
   border-radius: 5px;
 }
 
@@ -117,7 +120,6 @@ main {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .engageButton {
@@ -144,7 +146,7 @@ main {
 
 .overlay {
   height: 218px;
-  width: 338px;
+  width: 333px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.24);
 }
@@ -154,8 +156,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 7px;
-  margin-right: 2px;
+  background-color: rgb(253, 253, 253);
+  padding-top: 10px;
+  padding-right: 2px;
+  padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .bonus-text {

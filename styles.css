@@ -1,0 +1,120 @@
+/* 
+**RULE KEY**:
+=======
+Size
+Display
+Flex rules
+Color
+Margin
+Border
+Padding
+Font
+Text
+Misc */
+
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+  max-height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-self: center; */
+  overflow: scroll;
+}
+
+.nav-bar {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: ab;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100px;
+  width: 190px;
+}
+
+.nav-section {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-links {
+  font-size: 18px;
+}
+
+.mobile-left {
+  /* height: 175px; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+}
+
+/* .nav-right-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.staff-container-list {
+  /* height: 600px; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.staff-cards {
+  height: 600px;
+  width: 330px;
+  margin: 0 auto;
+}
+
+.engage {
+  height: 50px;
+  width: 308px;
+  display: flex;
+  /* position: absolute; */
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.engageButton {
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+}
+
+.card-photo {
+  height: 218px;
+  width: 328px;
+  z-index: 0;
+}
+
+.list {
+  list-style-type: none;
+}

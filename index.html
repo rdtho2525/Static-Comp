@@ -6,44 +6,48 @@
   <link rel="stylesheet" href="./styles.css">
   <title>Bluth Company</title>
 </head>
-<header>
-  <nav id="nav" class="nav-bar">
-    <button id="user" class="user">
-      <img id="avatar" class="avatar" src="./assets/avatar.svg" alt="">
-      <p id="userName" class="user-name">User Name</p>
-    </button>
-    <div class="mobile-left">
-      
-      <img id="logo" class="logo" src="./assets/bluth-company-logo.png" alt="Bluth Company Logo">
-        <ul id="navList" class="nav-section list">
-          <li id="home" class="nav-links">Home</li>
-          <li id="staff" class="nav-links">Staff Members</li>
-          <li id="realEstateDev" class="nav-links">Real Estate Development</li>
-        </ul>
-    </div>
-  </nav>
-</header>
 <body>
+  <header>
+    <nav id="nav" class="nav-bar">
+      <button id="user" class="user">
+        <img id="avatar" class="avatar" src="./assets/avatar.svg" alt="">
+        <p id="userName" class="user-name">User Name</p>
+      </button>
+      <div class="mobile-left">
+        
+        <img id="logo" class="logo" src="./assets/bluth-company-logo.png" alt="Bluth Company Logo">
+          <ul id="navList" class="nav-section list">
+            <li id="home" class="nav-links">Home</li>
+            <li id="staff" class="nav-links">Staff Members</li>
+            <li id="realEstateDev" class="nav-links">Real Estate Development</li>
+          </ul>
+      </div>
+    </nav>
+  </header>  
   <main>
     <h1>Meet Our Staff</h1>
     <ul id="staffMembers" class="staff-container list">
       <li id="" class="staff-cards">
         <div class="engage">
-          <button class="engageButton">Rate</button>
-          <button class="engageButton">Connect</button>
+          <button class="engageButton left">Rate</button>
+          <button class="engageButton right">Connect</button>
+          <div class="overlay"></div>
+          <img id="michaelBluth" class="card-photo" src="./assets/michael.jpg" alt="Michael Bluth">
         </div>
-        <img id="michaelBluth" class="card-photo" src="./assets/michael.jpg" alt="Michael Bluth">
-        <h2>Michael Bluth</h2>
-        <p>Years at the Company: 30 years</p>
-        <p>As a child, Michael worked at Bluth's Original Frozen Banana Stand. 
-        Either in college or shortly after graduating, Michael began working for his father at the Bluth Company. 
-        He put in an honest day's work and never stole from the company, 
-        unlike the rest of his family. His father was impressed by his work ethic but he constantly shot his son 
-        down to keep working hard for his approval.</p>
-        <h3>Current Rating</h3>
-        <p>3.5/5</p>
-        <h3>Catchphrase Count</h3>
-        <p>2500</p>
+        <section class="about-me">
+          <h2>Michael Bluth</h2>
+          <p>Years at the Company: 30 years</p>
+          <p>As a child, Michael worked at Bluth's Original Frozen Banana Stand. 
+          Either in college or shortly after graduating, Michael began working for his father at the Bluth Company. 
+          He put in an honest day's work and never stole from the company, 
+          unlike the rest of his family. His father was impressed by his work ethic but he constantly shot his son 
+          down to keep working hard for his approval.</p>
+          <h3>Current Rating</h3>
+          <p class="bonus-text">3.5/5</p>
+          <h3>Catchphrase Count</h3>
+          <p class="bonus-text">2500</p>
+  
+        </section>
       </li>
       <!-- <li id="" class="staff-cards">
         <div class="overlay">

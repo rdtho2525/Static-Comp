@@ -14,9 +14,13 @@ Misc */
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 main {
@@ -25,23 +29,27 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-self: center; */
   overflow: scroll;
 }
 
 .nav-bar {
-  height: 220px;
+  height: 120px;
+  /* height: 220px; */
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  position: ab;
+  position: sticky;
+  margin-bottom: 10px;
+  border: 1px solid lightblue;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
 .logo {
   height: 100px;
   width: 190px;
+  margin-bottom: 15px;
 }
 
 .nav-section {
@@ -49,6 +57,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 10px;
 }
 
 .nav-links {
@@ -56,7 +65,6 @@ main {
 }
 
 .mobile-left {
-  /* height: 175px; */
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -67,12 +75,17 @@ main {
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 15px;
+  border: none;
 }
 
 .avatar {
   height: 50px;
   width: 50px;
+  margin: 0 auto;
 }
 
 /* .nav-right-container {
@@ -81,38 +94,67 @@ main {
 } */
 
 .staff-container-list {
-  /* height: 600px; */
   width: 350px;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .staff-cards {
   height: 600px;
   width: 330px;
   margin: 0 auto;
+  /* border: 1px solid black; */
+  border-radius: 5px;
 }
 
 .engage {
-  height: 50px;
-  width: 308px;
+  position: relative;
   display: flex;
-  /* position: absolute; */
   justify-content: space-between;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .engageButton {
   height: 50px;
   width: 50px;
+  position: absolute;
+  border-radius: 50%;
   z-index: 1;
+}
+
+.engageButton.right {
+  transform: translate(530%, 30%);
+}
+
+.engageButton.left {
+  transform: translate(25%, 30%);
 }
 
 .card-photo {
   height: 218px;
   width: 328px;
-  z-index: 0;
+  z-index: -1;
+}
+
+.overlay {
+  height: 218px;
+  width: 328px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.about-me {
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bonus-text {
+  font-size: 1.5em;
 }
 
 .list {

@@ -14,7 +14,7 @@ Misc */
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -36,14 +36,14 @@ main {
 
 .nav-bar {
   height: 100px;
-  /* height: 220px; */
+  height: 220px;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   position: sticky;
   background-color: rgb(253, 253, 253);
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   border-bottom: 4px solid rgba(255, 166, 0, 0.938);
   padding-bottom: 10px;
   overflow: hidden;
@@ -66,6 +66,8 @@ main {
 }
 
 .nav-links {
+  display: inline-block;
+  width: 50px;
   font-size: 18px;
 }
 
@@ -75,6 +77,16 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+}
+
+.home-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 30px;
+  width: 40px;
 }
 
 .user {
@@ -131,8 +143,14 @@ main {
   height: 50px;
   width: 50px;
   position: absolute;
+  background-color: rgba(253, 253, 253, 0.5);
+  border: none;
   border-radius: 50%;
   z-index: 1;
+}
+
+.engageButton:hover {
+  background-color: rgba(253, 253, 253, 1);
 }
 
 .engageButton.right {
@@ -174,4 +192,113 @@ main {
 
 .list {
   list-style-type: none;
+}
+
+.click {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  .staff-container {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* justify-content: center; */
+    margin: 0 auto;
+  }
+
+  .staff-cards {
+    /* display: inline-block; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* margin: 0px 0px 20px; */
+
+    /* margin: 0 auto; */
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .nav-section {
+      height: 30px;
+      width: 650px;
+      flex-direction: row;
+      align-self: flex-end;
+      justify-content: space-around;
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    .mobile-left {
+      flex-direction: row;
+    }
+
+    .nav-links {
+      height: 30px;
+      width: 250px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    #home {
+      width: 100px;
+    }
+
+    #staff {
+      width: 160px;
+    }
+
+    /* .icon {
+      height: 40px;
+      width: 30px;
+    } */
+
+    .staff-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      /* justify-content: space-around; */
+    }
+
+    .staff-cards {
+      height: 450px;
+      width: 280px;
+    }
+
+    .card-photo {
+      height: 161px;
+      width: 275px;
+      z-index: -1;
+    }
+
+    .overlay {
+      height: 161px;
+      width: 275px;
+    }
+
+    .about-me {
+      height: 281px;
+      font-size: 0.75em;
+    }
+
+    .engageButton {
+      height: 45px;
+      width: 45px;
+    }
+
+    .engageButton.right {
+      transform: translate(490%, 30%);
+    }
+
+    .engageButton.left {
+      transform: translate(20%, 30%);
+    }
+  }
 }

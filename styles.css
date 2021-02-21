@@ -35,7 +35,7 @@ main {
 }
 
 .nav-bar {
-  height: 120px;
+  height: 100px;
   /* height: 220px; */
   width: 100%;
   display: flex;
@@ -50,9 +50,10 @@ main {
 }
 
 .logo {
-  height: 100px;
-  width: 190px;
-  margin-bottom: 15px;
+  height: 68px;
+  width: 129.2px;
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .nav-section {
@@ -60,6 +61,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -71,6 +73,7 @@ main {
   width: 60%;
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: space-between;
 }
 
@@ -81,7 +84,7 @@ main {
   align-content: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0);
-  margin-right: 15px;
+  margin-right: 10px;
   border: none;
 }
 
@@ -113,6 +116,7 @@ main {
   height: 608px;
   width: 340px;
   margin: 0 auto;
+  margin-bottom: 20px;
   border: 4px solid rgba(255, 166, 0, 0.938);
   border-radius: 5px;
 }
@@ -140,14 +144,14 @@ main {
 }
 
 .card-photo {
-  height: 218px;
-  width: 338px;
+  height: 218;
+  width: 336px;
   z-index: -1;
 }
 
 .overlay {
   height: 218px;
-  width: 333px;
+  width: 332px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.24);
 }

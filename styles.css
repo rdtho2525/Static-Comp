@@ -14,7 +14,6 @@ Misc */
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
 }
@@ -34,6 +33,7 @@ main {
   z-index: -10;
 }
 
+/* NAVIGATION */
 .nav-bar {
   height: 100px;
   width: 100%;
@@ -112,6 +112,7 @@ main {
   margin: 0 auto;
 }
 
+/* MAIN SECTION */
 .section-header {
   color: rgb(253, 253, 253);
   padding: 10px 5px;
@@ -179,6 +180,8 @@ main {
   padding-left: 7px;
 }
 
+/* MISCELLANEOUS */
+
 .bonus-text {
   font-size: 1.5em;
 }
@@ -190,6 +193,8 @@ main {
 .click {
   cursor: pointer;
 }
+
+/* RESPONSIVE DESIGN RULES */
 
 @media only screen and (min-width: 768px) {
   main {

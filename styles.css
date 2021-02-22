@@ -42,7 +42,6 @@ main {
   justify-content: space-between;
   position: sticky;
   background-color: rgb(253, 253, 253);
-  /* margin-bottom: 10px; */
   border-bottom: 4px solid rgba(255, 166, 0, 0.938);
   padding-bottom: 10px;
   overflow: hidden;
@@ -199,99 +198,107 @@ main {
 
   .staff-container {
     height: 100%;
-    width: 80%;
+    width: 90%;
+    max-width: 716px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin: 0 auto;
   }
+}
 
-  .staff-cards {
-    /* display: inline-block; */
-    /* align-content: center; */
-    /* justify-content: center; */
-    /* margin: 0px 0px 20px; */
-
-    /* margin: 0 auto; */
+@media only screen and (min-width: 1024px) {
+  .nav-bar.expand {
+    height: 100px;
   }
 
-  @media only screen and (min-width: 1024px) {
-    .logo {
-      margin: 0;
-      margin-bottom: 12px;
-      margin-left: 10px;
-    }
+  .logo {
+    margin: 0;
+    margin-bottom: 12px;
+    margin-left: 10px;
+  }
 
-    .nav-section {
-      height: 30px;
-      width: 650px;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 50px;
-      margin-left: 10px;
-    }
+  .nav-section {
+    height: 30px;
+    width: 650px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
 
-    .mobile-left {
-      flex-direction: row;
-      align-items: flex-end;
-    }
+  .mobile-left {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 
-    #home {
-      width: 100px;
-    }
+  #home {
+    width: 100px;
+  }
 
-    #realEstateDev {
-      width: 220px;
-    }
+  #realEstateDev {
+    width: 220px;
+  }
 
-    .icon {
-      height: 40px;
-      width: 50px;
-      padding-bottom: 10px;
-    }
+  .icon {
+    height: 40px;
+    width: 50px;
+    padding-bottom: 10px;
+  }
 
-    .user {
-      margin-right: 15px;
-    }
+  .user {
+    margin-right: 15px;
+  }
 
-    .staff-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-    }
+  .staff-container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-    .staff-cards {
-      height: 450px;
-      width: 280px;
-    }
+  .staff-cards {
+    height: 450px;
+    width: 280px;
+  }
 
-    .card-photo {
-      height: 161px;
-      width: 275px;
-      z-index: -1;
-    }
+  .card-photo {
+    height: 161px;
+    width: 275px;
+    z-index: -1;
+  }
 
-    .overlay {
-      height: 161px;
-      width: 271px;
-    }
+  .overlay {
+    height: 161px;
+    width: 271px;
+  }
 
-    .about-me {
-      height: 281px;
-      font-size: 0.75em;
-    }
+  .about-me {
+    height: 281px;
+    font-size: 0.75em;
+  }
 
-    .engageButton {
-      height: 45px;
-      width: 45px;
-    }
+  .engageButton {
+    height: 45px;
+    width: 45px;
+  }
 
-    .engageButton.right {
-      transform: translate(490%, 30%);
-    }
+  .engageButton.right {
+    transform: translate(490%, 30%);
+  }
 
-    .engageButton.left {
-      transform: translate(20%, 30%);
-    }
+  .engageButton.left {
+    transform: translate(20%, 30%);
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .section-header {
+    margin-left: 35px;
+  }
+  .staff-container {
+    min-width: 1145px;
+    max-width: 1190px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

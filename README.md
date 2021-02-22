@@ -10,7 +10,7 @@ _The Bluth Company_ is a real estate development firm founded by George Bluth. W
 
 ### Tablet View
 
-![tablet](assets/tablet.svg)
+![tablet](assets/tablet.png)
 
 ### Mobile View
 
